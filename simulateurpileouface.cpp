@@ -40,6 +40,7 @@ float spf()         // Attribution fonction simulation
     string tmp;
     cin.clear();
     cin >> tmp;
+    cout << "incorrect , ce n'est pas nombre! " << endl;
         }
 
     for (i=0;i<a;i++)  // Debut de boucle for:une simulation 'c'est un lancer de piece
