@@ -36,7 +36,7 @@ float spf()         // Attribution fonction simulation
     cout<<"nombre de simulations  ";
     cin>>a;
 
-    for (i=0;i<a;i++)  // Debut de boucle for:une simulation 'c'est un lancer de dé
+    for (i=0;i<a;i++)  // Debut de boucle for:une simulation 'c'est un lancer de piece
     {
         pf();
 
@@ -96,7 +96,7 @@ int main()                                     // Debut fonction principale
     {   np=0;                                  // Attribution nombres pile et nombres face en debut de boucle principale
         nf=0;
 
-        // Deuxième boucle : Si resultat = n , on casse la boucle;
+        // Deuxieme boucle : Si resultat = n , on casse la boucle;
         // Si resultat= y , on apelle la fonction tirage pile ou face
         do
         {
