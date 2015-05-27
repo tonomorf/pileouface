@@ -4,10 +4,11 @@
  * Mail         : Fromonot.camille@gmail.com                                                                    *
  * Date         : 24/05/2015                                                                                    *
  * Fichier      : Programme                                                                                     *
- * Description  : Simulateur de pile ou face,on peut jouer (y); simuler n lancer de pieces (s); ou quitter(n).   *
+ * Description  : Simulateur de pile ou face,on peut jouer (y); simuler n lancer de pieces (s); ou quitter(n).  *
  *                Le simulateur donne le nombres de pile le nombres de face et le rapport pile/face.            *
  *                Quand on quitte, le programme vous donne ces meme donnees, seulement pour le jeu.             *
  ****************************************************************************************************************/
+
 #include <iostream> // Bibliotheque entrees sortie
 #include <time.h>   // Bibliotheque du temps
 #include <stdlib.h> // Bibliotheque pour random()
@@ -34,7 +35,12 @@ float spf()         // Attribution fonction simulation
 
     //Choisir le nombre de simulation
     cout<<"nombre de simulations  ";
-    cin>>a;
+    while( !(cin >> a) )
+    {
+    string tmp;
+    cin.clear();
+    cin >> tmp;
+        }
 
     for (i=0;i<a;i++)  // Debut de boucle for:une simulation 'c'est un lancer de piece
     {
